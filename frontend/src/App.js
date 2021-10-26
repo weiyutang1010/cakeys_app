@@ -114,6 +114,22 @@ function Orders() {
     <div className='Page'>
       <h2>Orders Entity</h2>
       <p>records details of Orders placed by Customers</p>
+      <table>
+        <thead>
+          <tr>
+            <th>order_ID</th>
+            <th>customer_ID</th>
+            <th>order_total_USD</th>
+            <th>order_date_time</th>
+            <th>credit_card_number</th>
+            <th>credit_card_expiration</th>
+            <th>order_fill_date</th>
+            <th>order_pickup_date</th>
+            <th>review_ID</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <form>
         <div className='rows'>
           <div className='labels'>
@@ -148,6 +164,18 @@ function OrderedCakes() {
     <div className='Page'>
       <h2>OrderedCakes Entity</h2>
       <p>records details of Cakes ordered by Customers</p>
+      <table>
+        <thead>
+          <tr>
+            <th>order_ID</th>
+            <th>cake_ID</th>
+            <th>cake_sale_price_USD</th>
+            <th>cake_qty</th>
+            <th>order_status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   );
 }
@@ -157,6 +185,17 @@ function Cakes() {
     <div className='Page'>
       <h2>Cakes Entity</h2>
       <p>Cakes available for Customers to Order</p>
+      <table>
+        <thead>
+          <tr>
+            <th>cake_ID</th>
+            <th>cake_name</th>
+            <th>cake_size</th>
+            <th>cake_retail_price_USD</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <form>
         <div className='rows'>
           <div className='labels'>
@@ -181,6 +220,19 @@ function OrderReviews() {
     <div className='Page'>
       <h2>OrderReviews Entity</h2>
       <p>metrics captured on completed orders</p>
+      <table>
+        <thead>
+          <tr>
+            <th>review_ID</th>
+            <th>order_ID</th>
+            <th>overall_rating</th>
+            <th>product_quality_rating</th>
+            <th>service_rating</th>
+            <th>comment</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <form>
         <div className='rows'>
           <div className='labels'>
