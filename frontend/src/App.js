@@ -176,6 +176,25 @@ function OrderedCakes() {
         </thead>
         <tbody></tbody>
       </table>
+      <form>
+        <div className='rows'>
+          <div className='labels'>
+            <label for='order_ID'>Order ID: </label>
+            <label for='cake_ID'>Cake ID: </label>
+            <label for='cake_sale_price_USD'>Cake Sale Price (USD): </label>
+            <label for='cake_qty'>Quantity: </label>
+            <label for='order_status'>Order Status: </label>
+          </div>
+          <div className='inputs'>
+            <input type='text' id='order_ID' name='order_ID' required></input>
+            <input type='text' id='order_total_USD' name='order_total_USD' required></input>
+            <input type='text' id='cake_sale_price_USD' name='cake_sale_price_USD'></input>
+            <input type='text' id='cake_qty' name='cake_qty' required></input>
+            <input type='text' id='order_status' name='order_status' required></input>
+          </div>
+        </div>
+        <input type='submit' value='Submit'></input>
+      </form>
     </div>
   );
 }
