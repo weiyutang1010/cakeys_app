@@ -13,3 +13,24 @@ body {
 .Page {
   text-align: center;
 }
+
+/* table related items*/
+table,
+caption,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  padding: 0.25rem 0.25rem;
+}
+
+td {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+table {
+  width: 50%;
+  background-color: #fafafa;
+  margin: auto;
+}
