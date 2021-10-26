@@ -34,3 +34,13 @@ table {
   background-color: #fafafa;
   margin: auto;
 }
+
+label,
+input {
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+form {
+  
+}
