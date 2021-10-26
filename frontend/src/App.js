@@ -97,6 +97,31 @@ function Orders() {
     <div className='Page'>
       <h2>Orders Entity</h2>
       <p>records details of Orders placed by Customers</p>
+      <form>
+        <div className='rows'>
+          <div className='labels'>
+            <label for='customer_ID'>Customer ID: </label>
+            <label for='order_total_USD'>Order Total (USD): </label>
+            <label for='order_date_time'>Order Date: </label>
+            <label for='credit_card_number'>Credit Card Number: </label>
+            <label for='credit_card_expiration'>Credit Card Expiration: </label>
+            <label for='order_fill_date'>Order Fill Date: </label>
+            <label for='order_pickup_date'>Order Pickup Date: </label>
+            <label for='review_ID'>Review ID: </label>
+          </div>
+          <div className='inputs'>
+            <input type='text' id='customer_ID' name='customer_ID' required></input>
+            <input type='text' id='order_total_USD' name='order_total_USD' required></input>
+            <input type='datetime-local' id='order_date_time' name='customer_DOB'></input>
+            <input type='text' id='credit_card_number' name='credit_card_number' required></input>
+            <input type='text' id='credit_card_expiration' name='credit_card_expiration' required></input>
+            <input type='date' id='order_fill_date' name='order_fill_date' required></input>
+            <input type='date' id='order_pickup_date' name='order_pickup_date' required></input>
+            <input type='text' id='review_ID' name='review_ID' required></input>
+          </div>
+        </div>
+        <input type='submit' value='Submit'></input>
+      </form>
     </div>
   );
 }
