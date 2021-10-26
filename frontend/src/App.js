@@ -115,6 +115,21 @@ function Cakes() {
     <div className='Page'>
       <h2>Cakes Entity</h2>
       <p>Cakes available for Customers to Order</p>
+      <form>
+        <div className='rows'>
+          <div className='labels'>
+            <label for='cake_name'>Cake Name: </label>
+            <label for='cake_size'>Cake Size: </label>
+            <label for='cake_retail_price_USD'>Cake Retail Price (USD): </label>
+          </div>
+          <div className='inputs'>
+            <input type='text' id='cake_name' name='cake_name' required></input>
+            <input type='text' id='cake_size' name='cake_size'></input>
+            <input type='text' id='cake_retail_price_USD' name='cake_retail_price_USD'></input>
+          </div>
+        </div>
+        <input type='submit' value='Submit'></input>
+      </form>
     </div>
   );
 }
@@ -124,6 +139,25 @@ function OrderReviews() {
     <div className='Page'>
       <h2>OrderReviews Entity</h2>
       <p>metrics captured on completed orders</p>
+      <form>
+        <div className='rows'>
+          <div className='labels'>
+            <label for='order_ID'>Order ID: </label>
+            <label for='overall_rating'>Overall Rating: </label>
+            <label for='product_quality_rating'>Product Quality Rating: </label>
+            <label for='service_rating'>Service Rating: </label>
+            <label for='comment'>Comment: </label>
+          </div>
+          <div className='inputs'>
+            <input type='text' id='order_ID' name='order_ID' required></input>
+            <input type='text' id='overall_rating' name='overall_rating'></input>
+            <input type='text' id='product_quality_rating' name='product_quality_rating'></input>
+            <input type='text' id='service_rating' name='service_rating'></input>
+            <textarea id='comment' name='comment'> </textarea>
+          </div>
+        </div>
+        <input type='submit' value='Submit'></input>
+      </form>
     </div>
   );
 }
