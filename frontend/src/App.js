@@ -61,6 +61,23 @@ function Customers() {
     <div className='Page'>
       <h2>Customers Entity</h2>
       <p>records details of Customers who order cakes</p>
+      <table>
+        <thead>
+          <tr>
+            <th>customer_ID</th>
+            <th>customer_first_name</th>
+            <th>customer_last_name</th>
+            <th>customer_DOB</th>
+            <th>customer_street_address</th>
+            <th>customer_city</th>
+            <th>customer_state</th>
+            <th>customer_zip</th>
+            <th>customer_phone</th>
+            <th>customer_email</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <form>
         <div className='rows'>
           <div className='labels'>
@@ -178,7 +195,9 @@ function OrderReviews() {
             <input type='text' id='overall_rating' name='overall_rating'></input>
             <input type='text' id='product_quality_rating' name='product_quality_rating'></input>
             <input type='text' id='service_rating' name='service_rating'></input>
-            <textarea id='comment' name='comment'> </textarea>
+            <textarea id='comment' name='comment'>
+              {' '}
+            </textarea>
           </div>
         </div>
         <input type='submit' value='Submit'></input>
