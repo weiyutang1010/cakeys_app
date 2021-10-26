@@ -42,5 +42,20 @@ input {
 }
 
 form {
-  
+  width: 50%;
+  margin: auto;
+}
+
+.rows {
+  display: flex;
+  text-align: center;
+}
+
+.labels,
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
 }

@@ -62,42 +62,30 @@ function Customers() {
       <h2>Customers Entity</h2>
       <p>records details of Customers who order cakes</p>
       <form>
-        <label for='customer_first_name'>First Name: </label>
-        <input type='text' id='customer_first_name' name='customer_first_name' required></input>
-        <br />
-
-        <label for='customer_last_name'>Last Name: </label>
-        <input type='text' id='customer_last_name' name='customer_last_name' required></input>
-        <br />
-
-        <label for='customer_DOB'>Date of Birth: </label>
-        <input type='date' id='customer_DOB' name='customer_DOB'></input>
-        <br />
-
-        <label for='customer_street_address'>Street Address: </label>
-        <input type='text' id='customer_street_address' name='customer_street_address' required></input>
-        <br />
-
-        <label for='customer_city'>City: </label>
-        <input type='text' id='customer_city' name='customer_city' required></input>
-        <br />
-
-        <label for='customer_state'>State: </label>
-        <input type='text' id='customer_state' name='customer_state' required></input>
-        <br />
-
-        <label for='customer_zip'>Zip Code: </label>
-        <input type='text' id='customer_zip' name='customer_zip' required></input>
-        <br />
-
-        <label for='customer_phone'>Phone: </label>
-        <input type='text' id='customer_phone' name='customer_phone' required></input>
-        <br />
-
-        <label for='customer_email'>Email: </label>
-        <input type='text' id='customer_email' name='customer_email' required></input>
-        <br />
-
+        <div className='rows'>
+          <div className='labels'>
+            <label for='customer_first_name'>First Name: </label>
+            <label for='customer_last_name'>Last Name: </label>
+            <label for='customer_DOB'>Date of Birth: </label>
+            <label for='customer_street_address'>Street Address: </label>
+            <label for='customer_city'>City: </label>
+            <label for='customer_state'>State: </label>
+            <label for='customer_zip'>Zip Code: </label>
+            <label for='customer_phone'>Phone: </label>
+            <label for='customer_email'>Email: </label>
+          </div>
+          <div className='inputs'>
+            <input type='text' id='customer_first_name' name='customer_first_name' required></input>
+            <input type='text' id='customer_last_name' name='customer_last_name' required></input>
+            <input type='date' id='customer_DOB' name='customer_DOB'></input>
+            <input type='text' id='customer_street_address' name='customer_street_address' required></input>
+            <input type='text' id='customer_city' name='customer_city' required></input>
+            <input type='text' id='customer_state' name='customer_state' required></input>
+            <input type='text' id='customer_zip' name='customer_zip' required></input>
+            <input type='text' id='customer_phone' name='customer_phone' required></input>
+            <input type='text' id='customer_email' name='customer_email' required></input>
+          </div>
+        </div>
         <input type='submit' value='Submit'></input>
       </form>
     </div>
