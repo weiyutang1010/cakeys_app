@@ -24,6 +24,11 @@ td {
   padding: 0.25rem 0.25rem;
 }
 
+th {
+  background-color: #0288d1;
+  color: white;
+}
+
 td {
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -34,6 +39,12 @@ table {
   background-color: #fafafa;
   margin: auto;
 }
+
+caption {
+  font-size: large;
+  font-weight: bold;
+}
+
 
 label,
 input {
@@ -48,7 +59,7 @@ form {
 
 .rows {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -57,4 +68,34 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navigation {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.tab, .tab:visited {
+  color: inherit;
+  font-size: large;
+  padding: .5rem;
+  margin: .25rem;
+  text-decoration: none;
+}
+
+.tab:hover {
+  background-color: #E0E0E0;
+  text-decoration: underline;
 }
