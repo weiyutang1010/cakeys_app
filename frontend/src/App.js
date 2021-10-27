@@ -26,7 +26,7 @@ export default function Main() {
         </div>
         <hr></hr>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/index'>
             <Home />
           </Route>
           <Route path='/customers'>
